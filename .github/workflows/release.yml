@@ -47,6 +47,6 @@ jobs:
           build-command: pnpm --filter @groupsum/file-browser run build
           test-command: pnpm --filter @groupsum/file-browser run typecheck
           scope: "@groupsum"
-          npm-token: ${{ secrets.NPM_TOKEN }}
+          npm-token: ${{ secrets.NPM_API_TOKEN }}
           access: public
           dry-run: ${{ github.event_name == 'workflow_dispatch' && inputs.dry-run || false }}
