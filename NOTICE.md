@@ -1,1 +1,1 @@
-React File Explorer Component is a Groupsum component package.
+Groupsum File Explorer is a Groupsum component package.

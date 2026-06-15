@@ -17,7 +17,7 @@ jobs:
     uses: cobycloud/actions/.github/workflows/reusable-pnpm-monorepo-ci.yml@main
     with:
       node-versions: '["20","22"]'
-      package-cells: '[{"name":"react-file-explorer-component","path":"packages/react-file-explorer-component"}]'
+      package-cells: '[{"name":"file-explorer","path":"packages/file-explorer"}]'
       install-command: pnpm install --frozen-lockfile
       lint-command: pnpm run lint
       typecheck-command: pnpm run typecheck

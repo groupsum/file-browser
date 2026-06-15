@@ -1,7 +1,7 @@
 {
-  "name": "react-file-explorer-component-workspace",
+  "name": "groupsum-file-explorer-workspace",
   "version": "0.1.0",
-  "description": "SSOT-governed Groupsum React file explorer component workspace.",
+  "description": "SSOT-governed Groupsum file explorer workspace.",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@9.15.4",

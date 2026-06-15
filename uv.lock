@@ -3,6 +3,21 @@ revision = 1
 requires-python = ">=3.10"
 
 [[package]]
+name = "groupsum-file-explorer-workspace"
+version = "0.1.0"
+source = { virtual = "." }
+
+[package.dev-dependencies]
+dev = [
+    { name = "ssot-registry" },
+]
+
+[package.metadata]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ssot-registry", specifier = ">=0.2.24" }]
+
+[[package]]
 name = "orjson"
 version = "3.11.9"
 source = { registry = "https://pypi.org/simple" }
@@ -82,21 +97,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/f3/c3/0c6798456bade745c75c452342dabacce5798196483e77e643be1f53877d/orjson-3.11.9-cp314-cp314-win_amd64.whl", hash = "sha256:32ef5f4283a3be81913947d19608eacb7c6608026851123790cd9cc8982af34b", size = 127078 },
     { url = "https://files.pythonhosted.org/packages/16/21/5a3f1e8913103b703a436a5664238e5b965ec392b555fe68943ea3691e6b/orjson-3.11.9-cp314-cp314-win_arm64.whl", hash = "sha256:eebdbdeef0094e4f5aefa20dcd4eb2368ab5e7a3b4edea27f1e7b2892e009cf9", size = 126687 },
 ]
-
-[[package]]
-name = "react-file-explorer-component-workspace"
-version = "0.1.0"
-source = { virtual = "." }
-
-[package.dev-dependencies]
-dev = [
-    { name = "ssot-registry" },
-]
-
-[package.metadata]
-
-[package.metadata.requires-dev]
-dev = [{ name = "ssot-registry", specifier = ">=0.2.24" }]
 
 [[package]]
 name = "ssot-cli"

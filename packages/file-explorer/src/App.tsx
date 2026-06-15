@@ -118,11 +118,11 @@ export default function App() {
       <header className="border-b border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-950 px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
-            R
+            G
           </div>
           <div>
-            <h1 className="font-bold text-sm sm:text-lg leading-tight">React File Explorer</h1>
-            <p className="text-[10px] sm:text-xs text-slate-500 font-mono">v1.3.0 • MIT License</p>
+            <h1 className="font-bold text-sm sm:text-lg leading-tight">Groupsum File Explorer</h1>
+            <p className="text-[10px] sm:text-xs text-slate-500 font-mono">v0.1.0 - UNLICENSED</p>
           </div>
         </div>
 
@@ -260,9 +260,9 @@ export default function App() {
             {activeTab === 'usage' && (
               <div className="bg-gray-50 dark:bg-slate-950 border border-gray-200 dark:border-slate-800 rounded-lg p-4 font-mono text-xs overflow-x-auto shadow-sm">
 <pre className="text-green-600 dark:text-green-400">
-{`npm install @ui/file-explorer lucide-react
+{`npm install @groupsum/file-explorer lucide-react
 
-import { FileExplorer } from '@ui/file-explorer';
+import { FileExplorer } from '@groupsum/file-explorer';
 
 function App() {
   return (

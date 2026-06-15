@@ -40,12 +40,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: cobycloud/actions/actions/npm-publish@main
         with:
-          package-directory: packages/react-file-explorer-component
+          package-directory: packages/file-explorer
           install-directory: .
           cache-dependency-path: pnpm-lock.yaml
           install-command: corepack enable && pnpm install --frozen-lockfile
-          build-command: pnpm --filter @groupsum/react-file-explorer-component run build
-          test-command: pnpm --filter @groupsum/react-file-explorer-component run typecheck
+          build-command: pnpm --filter @groupsum/file-explorer run build
+          test-command: pnpm --filter @groupsum/file-explorer run typecheck
           scope: "@groupsum"
           npm-token: ${{ secrets.NPM_TOKEN }}
           access: public

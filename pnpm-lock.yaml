@@ -8,7 +8,7 @@ importers:
 
   .: {}
 
-  packages/react-file-explorer-component:
+  packages/file-explorer:
     dependencies:
       lucide-react:
         specifier: ^0.546.0
