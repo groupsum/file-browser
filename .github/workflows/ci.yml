@@ -17,6 +17,7 @@ jobs:
     uses: cobycloud/actions/.github/workflows/reusable-pnpm-monorepo-ci.yml@main
     with:
       node-versions: '["20","22"]'
+      pnpm-version: "9.15.4"
       package-cells: '[{"name":"file-browser","path":"packages/file-browser"}]'
       install-command: pnpm install --frozen-lockfile
       lint-command: pnpm run lint

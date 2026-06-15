@@ -4,7 +4,6 @@
   "description": "SSOT-governed Groupsum file browser workspace.",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.15.4",
   "workspaces": [
     "packages/*"
   ],
@@ -15,5 +14,6 @@
     "test": "pnpm -r --if-present run test",
     "typecheck": "pnpm -r run typecheck",
     "ssot:validate": "uv run ssot validate ."
-  }
+  },
+  "packageManager": "pnpm@9.15.4"
 }
