@@ -1,7 +1,7 @@
 {
-  "name": "groupsum-file-explorer-workspace",
+  "name": "file-browser-workspace",
   "version": "0.1.0",
-  "description": "SSOT-governed Groupsum file explorer workspace.",
+  "description": "SSOT-governed Groupsum file browser workspace.",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@9.15.4",

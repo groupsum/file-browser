@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import { ChevronRight, ChevronDown, File, Folder, Image as ImageIcon, FileText, Music, Video, History, Code, Archive, Terminal, Download } from 'lucide-react';
 import { FileNode } from './types';
-import './FileExplorerItem.css';
+import './FileBrowserItem.css';
 
-interface FileExplorerItemProps {
+interface FileBrowserItemProps {
   item: FileNode;
   level: number;
   isSelected: boolean;
@@ -68,7 +68,7 @@ const HighlightMatch = ({ text, query }: { text: string; query?: string }) => {
   );
 };
 
-export function FileExplorerItem({
+export function FileBrowserItem({
   item,
   level,
   isSelected,
@@ -86,7 +86,7 @@ export function FileExplorerItem({
   onActionClick,
   readOnly,
   itemIndex,
-}: FileExplorerItemProps) {
+}: FileBrowserItemProps) {
   const itemRef = useRef<HTMLDivElement>(null);
 
   const handleClick = (e: React.MouseEvent) => {

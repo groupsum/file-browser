@@ -1,11 +1,11 @@
 import React, { useState, useCallback, useMemo } from 'react';
-import { FileNode, FileExplorerProps, SortConfig } from './types';
+import { FileNode, FileBrowserProps, SortConfig } from './types';
 
-export function useFileExplorer({
+export function useFileBrowser({
   data,
   selectedIds: controlledSelectedIds,
   onSelectionChange,
-}: Pick<FileExplorerProps, 'data' | 'selectedIds' | 'onSelectionChange'>) {
+}: Pick<FileBrowserProps, 'data' | 'selectedIds' | 'onSelectionChange'>) {
   const [internalSelectedIds, setInternalSelectedIds] = useState<Set<string>>(new Set());
   const [expandedFolders, setExpandedFolders] = useState<Set<string>>(new Set());
   const [focusedId, setFocusedId] = useState<string | null>(null);

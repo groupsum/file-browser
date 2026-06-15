@@ -8,9 +8,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'GroupsumFileExplorer',
+      name: 'FileBrowser',
       fileName: (format) => `index.${format}.js`,
-      cssFileName: 'file-explorer',
+      cssFileName: 'file-browser',
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'lucide-react', 'motion'],

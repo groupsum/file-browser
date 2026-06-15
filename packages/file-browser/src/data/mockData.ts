@@ -1,4 +1,4 @@
-import { FileNode } from '../components/FileExplorer';
+import { FileNode } from '../components/FileBrowser';
 
 export const mockData: FileNode[] = [
   {

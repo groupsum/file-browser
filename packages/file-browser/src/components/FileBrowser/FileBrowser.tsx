@@ -1,11 +1,11 @@
 import React, { useState, useCallback } from 'react';
 import { Cloud, CloudOff, RefreshCw, ChevronRight, ChevronUp, ChevronDown, Search, PlusCircle, FolderOpen } from 'lucide-react';
-import { FileExplorerProps } from './types';
-import { useFileExplorer } from './useFileExplorer';
-import { FileExplorerItem } from './FileExplorerItem';
-import './FileExplorer.css';
+import { FileBrowserProps } from './types';
+import { useFileBrowser } from './useFileBrowser';
+import { FileBrowserItem } from './FileBrowserItem';
+import './FileBrowser.css';
 
-export function FileExplorer({
+export function FileBrowser({
   data,
   selectedIds: controlledSelectedIds,
   onSelectionChange,
@@ -21,7 +21,7 @@ export function FileExplorer({
   theme = 'system',
   readOnly = false,
   showIndex = false
-}: FileExplorerProps) {
+}: FileBrowserProps) {
   const {
     selectedIds,
     toggleSelection,
@@ -34,7 +34,7 @@ export function FileExplorer({
     sortConfig,
     toggleSort,
     getFilteredAndSorted,
-  } = useFileExplorer({ data, selectedIds: controlledSelectedIds, onSelectionChange });
+  } = useFileBrowser({ data, selectedIds: controlledSelectedIds, onSelectionChange });
 
   const [draggedIds, setDraggedIds] = useState<string[]>([]);
   const [dragOverId, setDragOverId] = useState<string | null>(null);
@@ -95,7 +95,7 @@ export function FileExplorer({
       return (
         <div key={item.id} role="group" className="relative transition-all duration-200">
           <div className={`${isDragOver ? 'bg-blue-50 dark:bg-blue-900/50 outline outline-2 outline-blue-500 rounded -outline-offset-2' : ''}`}>
-             <FileExplorerItem
+             <FileBrowserItem
                 item={item}
                 level={searchQuery ? 0 : level}
                 isSelected={isSelected}

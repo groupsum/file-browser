@@ -1,18 +1,18 @@
-# @groupsum/file-explorer
+# @groupsum/file-browser
 
 File explorer React component package for Groupsum applications.
 
 ## Install
 
 ```bash
-pnpm add @groupsum/file-explorer
+pnpm add @groupsum/file-browser
 ```
 
 ## Use
 
 ```tsx
-import { FileExplorer } from '@groupsum/file-explorer';
-import '@groupsum/file-explorer/style.css';
+import { FileBrowser } from '@groupsum/file-browser';
+import '@groupsum/file-browser/style.css';
 ```
 
 ## Scripts

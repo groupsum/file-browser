@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { FileExplorer, FileNode } from './components/FileExplorer';
+import { FileBrowser, FileNode } from './components/FileBrowser';
 import { mockData } from './data/mockData';
 import { Moon, Sun, Monitor, Github, Download, Trash2, PlayCircle } from 'lucide-react';
 import './App.css';
@@ -121,7 +121,7 @@ export default function App() {
             G
           </div>
           <div>
-            <h1 className="font-bold text-sm sm:text-lg leading-tight">Groupsum File Explorer</h1>
+            <h1 className="font-bold text-sm sm:text-lg leading-tight">File Browser</h1>
             <p className="text-[10px] sm:text-xs text-slate-500 font-mono">v0.1.0 - UNLICENSED</p>
           </div>
         </div>
@@ -163,7 +163,7 @@ export default function App() {
           <div>
             <h2 className="text-2xl font-bold tracking-tight mb-2">Portable & Reusable.</h2>
             <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-              A high-performance file explorer component built for React. Features complete drag-and-drop, real-time search filtering, deep breadcrumb navigation, sorting, and native accessible keyboard support.
+              A high-performance file browser component built for React. Features complete drag-and-drop, real-time search filtering, deep breadcrumb navigation, sorting, and native accessible keyboard support.
             </p>
           </div>
 
@@ -224,7 +224,7 @@ export default function App() {
             {activeTab === 'api' && (
               <div className="bg-gray-50 dark:bg-slate-950 border border-gray-200 dark:border-slate-800 rounded-lg p-4 font-mono text-xs overflow-x-auto shadow-sm space-y-4">
 <pre className="text-blue-600 dark:text-blue-400">
-{`interface FileExplorerProps {
+{`interface FileBrowserProps {
   data: FileNode[];
   selectedIds?: string[];
   syncStatus?: 'synced' | 'syncing' | 'error';
@@ -260,13 +260,13 @@ export default function App() {
             {activeTab === 'usage' && (
               <div className="bg-gray-50 dark:bg-slate-950 border border-gray-200 dark:border-slate-800 rounded-lg p-4 font-mono text-xs overflow-x-auto shadow-sm">
 <pre className="text-green-600 dark:text-green-400">
-{`npm install @groupsum/file-explorer lucide-react
+{`npm install @groupsum/file-browser lucide-react
 
-import { FileExplorer } from '@groupsum/file-explorer';
+import { FileBrowser } from '@groupsum/file-browser';
 
 function App() {
   return (
-    <FileExplorer
+    <FileBrowser
       data={myData}
       syncStatus={status}
       onMove={handleUpload}
@@ -325,7 +325,7 @@ function App() {
           </div>
 
           <div className="flex-1 bg-gray-50/50 dark:bg-slate-950/50 p-2 sm:p-4 lg:p-6 overflow-hidden">
-             <FileExplorer
+             <FileBrowser
                 data={data}
                 selectedIds={selectedIds}
                 onSelectionChange={(ids) => {

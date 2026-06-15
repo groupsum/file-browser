@@ -1,1 +1,1 @@
-Groupsum File Explorer is a Groupsum component package.
+File Browser is a Groupsum component package.

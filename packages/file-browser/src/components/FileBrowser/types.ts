@@ -20,7 +20,7 @@ export interface FileNode {
   previewUrl?: string; // Optional URL for image/video preview
 }
 
-export interface FileExplorerProps {
+export interface FileBrowserProps {
   /** Array of file and folder nodes */
   data: FileNode[];
   /** Controlled selected item IDs */

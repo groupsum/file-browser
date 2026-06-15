@@ -17,7 +17,7 @@ jobs:
     uses: cobycloud/actions/.github/workflows/reusable-pnpm-monorepo-ci.yml@main
     with:
       node-versions: '["20","22"]'
-      package-cells: '[{"name":"file-explorer","path":"packages/file-explorer"}]'
+      package-cells: '[{"name":"file-browser","path":"packages/file-browser"}]'
       install-command: pnpm install --frozen-lockfile
       lint-command: pnpm run lint
       typecheck-command: pnpm run typecheck
