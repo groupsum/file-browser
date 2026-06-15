@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.venv/
+.uv-cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tmp/
+*.tsbuildinfo
+coverage/

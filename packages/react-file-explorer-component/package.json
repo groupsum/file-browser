@@ -1,0 +1,61 @@
+{
+  "name": "@groupsum/react-file-explorer-component",
+  "version": "0.1.0",
+  "description": "Groupsum React file explorer component.",
+  "type": "module",
+  "license": "UNLICENSED",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "style": "./dist/react-file-explorer-component.css",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    },
+    "./style.css": {
+      "default": "./dist/react-file-explorer-component.css"
+    }
+  },
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "vite build --config vite.lib.config.ts && tsc -p tsconfig.build.json",
+    "build:demo": "vite build",
+    "preview": "vite preview",
+    "clean": "rimraf dist server.js",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "pnpm run typecheck"
+  },
+  "dependencies": {
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.21",
+    "esbuild": "^0.25.0",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^4.1.14",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.3"
+  }
+}

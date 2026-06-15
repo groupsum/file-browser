@@ -1,0 +1,17 @@
+[project]
+name = "react-file-explorer-component-workspace"
+version = "0.1.0"
+description = "SSOT-governed Groupsum React file explorer component workspace."
+requires-python = ">=3.10"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ssot-registry>=0.2.24",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = []
