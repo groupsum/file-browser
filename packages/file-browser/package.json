@@ -4,6 +4,10 @@
   "description": "Groupsum file browser React component.",
   "type": "module",
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/groupsum/file-browser"
+  },
   "sideEffects": [
     "**/*.css"
   ],
